@@ -29,8 +29,10 @@
             ],
             "styles": [
               "src/styles.css"
-            ],
-            "scripts": []
+            ], 
+            "scripts": [
+              "./node_modules/alertifyjs/build/alertify.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -93,7 +95,9 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/alertifyjs/build/alertify.min.js"
+            ]
           }
         },
         "lint": {
@@ -124,5 +128,8 @@
       }
     }
   },
-  "defaultProject": "shop"
+  "defaultProject": "shop",
+  "cli": {
+    "analytics": "2756e175-6522-40c9-9c3c-bfbaf987bd1b"
+  }
 }
