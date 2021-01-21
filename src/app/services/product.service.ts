@@ -19,6 +19,7 @@ export class ProductService {
     if(categoryId){
       newPath+="?categoryId="+categoryId;
     }
+    
     return this.http.get<Product[]>(newPath).pipe(
       tap(data=> console.log(JSON.stringify(data))),
       catchError(this.handleError)
