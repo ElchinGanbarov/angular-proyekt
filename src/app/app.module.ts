@@ -7,7 +7,9 @@ import { NavComponent } from './nav/nav.component';
 import { CategoryComponent } from './category/category.component';
 import { ProductComponent } from './product/product.component';
 import { ProductFilterPipe } from './product/product-filter.pipe';
-import {HttpClientModule} from '@angular/common/http'
+import {HttpClientModule} from '@angular/common/http';
+import { ProductAddForm1Component } from './product/product-add-form1/product-add-form1.component'
+import { AlertifyService } from './services/alertify.service';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,8 @@ import {HttpClientModule} from '@angular/common/http'
     NavComponent,
     CategoryComponent,
     ProductComponent,
-    ProductFilterPipe
+    ProductFilterPipe,
+    ProductAddForm1Component
   ],
   imports: [
     BrowserModule,
@@ -23,7 +26,7 @@ import {HttpClientModule} from '@angular/common/http'
     FormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [AlertifyService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
